@@ -4,14 +4,13 @@ import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 export default function EnquiryForm(props) {
 
-// console.log(props.name)
   const [showForm, setShowForm] = useState(props.value);
 
     const toggleForm = () => {
         console.log("hello")
     setShowForm(!showForm);
   };
-// Example using fetch
+
 const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -23,7 +22,7 @@ const handleSubmit = async (e) => {
         {
           method: "POST",
           body: formData,
-          mode: "no-cors", // necessary to bypass CORS
+          mode: "no-cors",
         }
       );
 

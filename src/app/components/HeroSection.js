@@ -160,7 +160,7 @@ const [showForm, setShowForm] = useState(false);
         <div className=" flex  justify-center  relative h-[700px] w-[650px] -mt-24">
           <Image
             src={Robot}
-            alt="Robot"
+            alt="Students learning AI at Vilora Tech Education Pondicherry"
             className="w-full h-full object-cover"
           />
 
